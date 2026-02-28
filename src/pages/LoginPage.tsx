@@ -19,7 +19,7 @@ function LoginPage() {
    return (
       <form
          onSubmit={handleSubmit(onSubmit)}
-         className="flex flex-col items-center justify-between p-6 rounded-2xl bg-gray-50 mx-auto w-xl mt-32 space-y-5"
+         className="flex flex-col items-center justify-between p-6 rounded-2xl bg-gray-50 mx-auto w-xl mt-16 space-y-5"
       >
          <h1 className="text-2xl font-medium flex space-x-2">
             <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
