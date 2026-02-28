@@ -3,7 +3,7 @@ import {
    BarChart3,
    Calendar,
    HelpCircle,
-   Home,
+   Blocks,
    LogOut,
    Settings,
    Users,
@@ -12,12 +12,14 @@ import {
    ChevronLeft,
    ChevronRight,
 } from "lucide-react";
+import { useAuth } from "../context/AuthContext";
 
 function SideBar() {
    const [isOpen, setIsOpen] = useState(false);
+   const { logout } = useAuth();
 
    const menuItems = [
-      { icon: Home, label: "Dashboard", active: true },
+      { icon: Blocks, label: "Dashboard", active: true },
       { icon: CheckSquare, label: "Tasks", badge: "20+" },
       { icon: Calendar, label: "Calendar" },
       { icon: BarChart3, label: "Analytics" },
@@ -27,7 +29,6 @@ function SideBar() {
    const generalItems = [
       { icon: Settings, label: "Settings" },
       { icon: HelpCircle, label: "Help" },
-      { icon: LogOut, label: "Logout" },
    ];
 
    return (
@@ -113,6 +114,16 @@ function SideBar() {
                         </li>
                      ))}
                   </ul>
+
+                  <div className="mt-1">
+                     <button
+                        className="flex items-center space-x-3 px-3 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-50 hover:cursor-pointer"
+                        onClick={() => logout()}
+                     >
+                        <LogOut className="w-5 h-5" />
+                        <span>Logout</span>
+                     </button>
+                  </div>
                </div>
             </nav>
 

@@ -17,7 +17,7 @@ function DashboardPage() {
                </p>
             </div>
             <div className="flex space-x-3">
-               <button className="bg-linear-to-b from-green-950 to-green-900 hover:from-green-900 hover:to-green-700 text-white px-4 py-2 rounded-3xl font-medium flex items-center space-x-2 transition-all duration-300">
+               <button className="bg-linear-to-b from-green-950 to-green-900 hover:from-green-900 hover:to-green-700 text-white px-4 rounded-3xl font-medium flex items-center space-x-1 sm:space-x-2 transition-all duration-300">
                   <span>+</span>
                   <span>Add Project</span>
                </button>

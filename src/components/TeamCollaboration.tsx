@@ -40,7 +40,7 @@ function TeamCollaboration() {
       <div className="bg-white rounded-lg p-6 border border-gray-200">
          <div className="flex items-center justify-between mb-6">
             <h3 className="text-lg font-semibold text-gray-900">Team Collaboration</h3>
-            <button className="text-green-600 hover:text-green-700 text-sm font-medium flex items-center space-x-1">
+            <button className="flex items-center border rounded-3xl border-green-900 text-green-900 px-4 py-2 font-medium hover:bg-gray-50">
                <Plus className="w-4 h-4" />
                <span>Add Member</span>
             </button>
@@ -60,7 +60,9 @@ function TeamCollaboration() {
                      </p>
                   </div>
                   <span
-                     className={`text-xs font-medium px-2 py-1 rounded-full ${
+                     className={`text-xs font-medium px-2 py-1 rounded-xl border ${
+                        member.status === "Pending" ? "bg-red-200 text-red-600" : ""
+                     } ${
                         member.status === "Completed"
                            ? "bg-green-100 text-green-800"
                            : member.status === "In Progress"

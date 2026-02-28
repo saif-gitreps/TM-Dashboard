@@ -8,7 +8,7 @@ function StatsCard() {
          change: "Increased from last month",
          increase: 6,
          color: "bg-linear-to-b from-green-950 to-green-900",
-         increaseColor: "yellow-400",
+         increaseColor: "amber-300",
          icon: TrendingUp,
       },
       {
@@ -62,11 +62,11 @@ function StatsCard() {
                   <p className="text-5xl font-bold">{stat.value}</p>
 
                   <div
-                     className={`flex items-center space-x-1 text-xs opacity-70 text-${stat.increaseColor}`}
+                     className={`flex items-center space-x-1 text-xs opacity-70 text-${stat.increaseColor} text-amber-300`}
                   >
                      {stat.increase && (
                         <span
-                           className={`flex items-center border p-0.5 rounded-md border-${stat.increaseColor}`}
+                           className={`flex justify-center items-center border-2 p-0.5 rounded-md border-${stat.increaseColor}`}
                         >
                            <span>{stat.increase}</span>{" "}
                            <span className="font-bold">&#8743; </span>

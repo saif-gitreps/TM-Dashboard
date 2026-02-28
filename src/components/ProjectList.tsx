@@ -38,7 +38,7 @@ function ProjectList() {
       <div className="bg-white rounded-lg p-6 border border-gray-200">
          <div className="flex items-center justify-between mb-6">
             <h3 className="text-lg font-semibold text-gray-900">Project</h3>
-            <button className="text-green-600 hover:text-green-700 text-sm font-medium flex items-center space-x-1">
+            <button className="flex items-center border rounded-3xl border-green-900 text-green-900 px-4 py-2 font-medium hover:bg-gray-50">
                <Plus className="w-4 h-4" />
                <span>New</span>
             </button>
